@@ -1,4 +1,5 @@
 import "../App.css";
+import maryImage from "../assets/mary.png";
 
 export default function Account() {
   return (
@@ -10,7 +11,7 @@ export default function Account() {
       </div>
       <div className="grid1">
         <div className="img-grid">
-          <img src="src\assets\mary.png"></img>
+          <img src={maryImage} alt="Mary Doe" />
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="21"
