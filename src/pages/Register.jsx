@@ -4,7 +4,7 @@ export default function Register() {
   const navigate = useNavigate();
   return (
     <div className="container">
-      <form className="login">
+      <div className="login">
         <div className="homediv">
           <p className="popx">Create your PopX account</p>
         </div>
@@ -80,13 +80,12 @@ export default function Register() {
           </div>
           <button
             className="btn log create"
-            type="submit"
-            onSubmit={() => navigate("/account")}
+            onClick={() => navigate("/account")}
           >
             Create Account
           </button>
         </div>
-      </form>
+      </div>
     </div>
   );
 }

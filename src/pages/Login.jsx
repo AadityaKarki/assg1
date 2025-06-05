@@ -3,7 +3,7 @@ export default function Login() {
   const navigate = useNavigate();
   return (
     <div className="container">
-      <form className="login">
+      <div className="login">
         <div className="homediv">
           <p className="popx">Signin to your PopX account</p>
           <p className="para">
@@ -28,14 +28,10 @@ export default function Login() {
             required
           ></input>
         </div>
-        <button
-          type="submit"
-          className="btn lgnbtn"
-          onSubmit={() => navigate("/account")}
-        >
+        <button className="btn lgnbtn" onClick={() => navigate("/account")}>
           Login
         </button>
-      </form>
+      </div>
     </div>
   );
 }
